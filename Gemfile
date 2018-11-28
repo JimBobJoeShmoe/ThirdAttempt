@@ -7,12 +7,13 @@ ruby '2.5.3'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-
+  gem 'sqlite3'
 end
 
 group :production do
   gem 'pg'
 end
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -66,13 +67,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-group :development, :test do
-  gem 'sqlite3'
- end
-gem 'pg', group: :production
-group :production do
-  gem 'rails_12factor'
-end
-source "https://rubygems.org"
-ruby "2.5.2.3"
-# ...
