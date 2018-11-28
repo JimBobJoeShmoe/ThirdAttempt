@@ -70,3 +70,6 @@ group :development, :test do
   gem 'sqlite3'
  end
 gem 'pg', group: :production
+group :production do
+  gem 'rails_12factor'
+end
