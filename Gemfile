@@ -73,3 +73,6 @@ gem 'pg', group: :production
 group :production do
   gem 'rails_12factor'
 end
+source "https://rubygems.org"
+ruby "2.5.2.3"
+# ...
